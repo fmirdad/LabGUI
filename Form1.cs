@@ -6,5 +6,10 @@ namespace LabGUI
         {
             InitializeComponent();
         }
+
+        private void ColourCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            messageTextBox.ForeColor = Color.Red;
+        }
     }
 }

@@ -28,34 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            checkBox1 = new CheckBox();
-            textBox1 = new TextBox();
+            ColourCheckBox = new CheckBox();
+            messageTextBox = new TextBox();
             SuspendLayout();
             // 
-            // checkBox1
+            // ColourCheckBox
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(123, 213);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(82, 19);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            ColourCheckBox.AutoSize = true;
+            ColourCheckBox.Location = new Point(123, 180);
+            ColourCheckBox.Name = "ColourCheckBox";
+            ColourCheckBox.Size = new Size(46, 19);
+            ColourCheckBox.TabIndex = 0;
+            ColourCheckBox.Text = "Red";
+            ColourCheckBox.UseVisualStyleBackColor = true;
+            ColourCheckBox.CheckedChanged += ColourCheckBox_CheckedChanged;
             // 
-            // textBox1
+            // messageTextBox
             // 
-            textBox1.Location = new Point(123, 92);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            messageTextBox.Location = new Point(123, 92);
+            messageTextBox.Name = "messageTextBox";
+            messageTextBox.Size = new Size(100, 23);
+            messageTextBox.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(364, 419);
-            Controls.Add(textBox1);
-            Controls.Add(checkBox1);
+            ClientSize = new Size(369, 280);
+            Controls.Add(messageTextBox);
+            Controls.Add(ColourCheckBox);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -64,7 +65,7 @@
 
         #endregion
 
-        private CheckBox checkBox1;
-        private TextBox textBox1;
+        private CheckBox ColourCheckBox;
+        private TextBox messageTextBox;
     }
 }

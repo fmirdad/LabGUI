@@ -9,7 +9,14 @@ namespace LabGUI
 
         private void ColourCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            messageTextBox.ForeColor = Color.Red;
+            if (ColourCheckBox.Checked == true)
+            {
+                messageTextBox.ForeColor = Color.Red; // if checkbox checked, turn colour of text to red
+            }
+            else
+            {
+                messageTextBox.ForeColor = Color.Black; // else the text should be black
+            }
         }
     }
 }

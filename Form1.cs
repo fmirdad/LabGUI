@@ -11,7 +11,9 @@ namespace LabGUI
         {
             if (ColourCheckBox.Checked == true)
             {
-                messageTextBox.ForeColor = Color.Red; // if checkbox checked, turn colour of text to red
+                outputTextBox.Text = messageTextBox.Text; // copy text to outputTextBox
+                outputTextBox.ForeColor = Color.Red; // if checkbox checked, turn colour of text to red
+                
             }
             else
             {

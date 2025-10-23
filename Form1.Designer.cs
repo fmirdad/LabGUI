@@ -30,6 +30,7 @@
         {
             ColourCheckBox = new CheckBox();
             messageTextBox = new TextBox();
+            outputTextBox = new TextBox();
             SuspendLayout();
             // 
             // ColourCheckBox
@@ -45,16 +46,24 @@
             // 
             // messageTextBox
             // 
-            messageTextBox.Location = new Point(123, 92);
+            messageTextBox.Location = new Point(123, 77);
             messageTextBox.Name = "messageTextBox";
             messageTextBox.Size = new Size(100, 23);
             messageTextBox.TabIndex = 1;
+            // 
+            // outputTextBox
+            // 
+            outputTextBox.Location = new Point(123, 132);
+            outputTextBox.Name = "outputTextBox";
+            outputTextBox.Size = new Size(100, 23);
+            outputTextBox.TabIndex = 2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(369, 280);
+            Controls.Add(outputTextBox);
             Controls.Add(messageTextBox);
             Controls.Add(ColourCheckBox);
             Name = "Form1";
@@ -67,5 +76,6 @@
 
         private CheckBox ColourCheckBox;
         private TextBox messageTextBox;
+        private TextBox outputTextBox;
     }
 }
